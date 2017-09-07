@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>candidateform</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script type="text/javascript" src="test.js"></script>
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<!-- <link rel="stylesheet" type="text/javascript" href="date.js"> -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="../js/bootstrap.js">
+	<link rel="stylesheet" type="text/css" href="../js/bootstrap.min.js">
+	<link rel="stylesheet" type="text/css" href="../js/npm.js">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	
+
+<script>
+	 	
+	 </script>
+</head>
+<body>
+
+
+<div class="form-group">
+        <div class="col-sm-12"><button type="submit" name="list" value="list">Back</button></div>
+   
+</div>
+ </form> 
+ <div>
+				<form method="POST" action="">
+					<button type="submit" class="btn btn-default" name="logout" value="logout">LogOut</button>
+				</form>
+			</div>
+
+<form class="form-horizontal"  id="myform">
+<div class="login_d1">
+
+
+
+	<div class="form-group">
+	<div class="col-sm-12">
+		<h1>Candidate Registration Form</h1>
+	</div>
+	</div>
+
+	<div class="form-group">
+	    <label class="control-label col-sm-4" for="date">Date:</label>
+	    <div class="col-sm-8">
+	      <input type="date" class="form-control" name="date" id="date" value="">
+	    </div>
+   </div>
+   <div class="form-group">
+	    <label class="control-label col-sm-4" for="name">Full Name:</label>
+	    <div class="col-sm-8">
+	      <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Enter your Full Name" value=""><span id="fname"></span>
+	    </div>
+   </div>
+   <div class="form-group">
+	    <label class="control-label col-sm-4" for="email">Email:</label>
+	    <div class="col-sm-8">
+	      <input type="text"  class="form-control" id="email" name="email" placeholder="Enter your Valid Email" value=""><span id="femail"></span>
+	    </div>
+   </div>
+   <div class="form-group">
+	    <label class="control-label col-sm-4" for="mobile" >Mobile:</label>
+	    <div class="col-sm-8">
+	     <input type="text" class="form-control" name="mobile" id="umobile" placeholder="Enter your Mobile No." value=""><span id="fmobile"></span>
+	    </div>
+   </div>
+   <div class="form-group">
+	    <label class="control-label col-sm-4" for="maritalstatus">Marital Status:</label>
+	    <div class="col-sm-8 form-inline">
+	      <input type="radio" name="maritalstatus" value="married" id="maritalstatus" class="form-control" value="married" checked>
+		  Married
+		  <input type="radio" name="maritalstatus" value="unmarried" id="maritalstatus" class="form-control" value="unmarried"> 					
+		  Unmarried
+	    </div>
+   </div>
+   <div class="form-group">
+	    <label class="control-label col-sm-4" for="gender">Gender:</label>
+	    <div class="col-sm-8 form-inline">
+	      <input type="radio" name="gender" value="male" id="gender" class="form-control" value="male" checked> 
+		  Male
+		  <input type="radio" name="gender" value="female" id="gender" class="form-control" value="female"> 							
+		 Female
+	    </div>
+   </div>
+   <div class="form-group">
+	    <label class="control-label col-sm-4" for="qualification">Qualification:</label>
+	    <div class="col-sm-8">
+	     <input type="text" class="form-control" name="qualification" id="uqualification" placeholder="Enter your Qualification" value=""><span id="fqualification"></span> 
+	    </div>
+   </div>
+   <div class="form-group">
+	    <label class="control-label col-sm-4" for="positionforapply">Position For Apply:</label>
+	    <div class="col-sm-8">
+	     <input type="text" class="form-control" name="positionforapply" id="uposition" placeholder="Enter a position for apply" value=""><span id="fposition"></span> 
+	    </div>
+   </div>
+
+  </div>
+<!-- <div class="">
+		
+			<div class="form-group">
+				<div class="col-sm-12">
+					<h1>Exprience Details</h1>
+				</div>
+			</div>
+				<div class="col-sm-12">
+					<div class="col-sm-2">
+						<label>S.No.</label>
+					</div>
+					<div class="col-sm-4">
+						<label>Name of Company</label>
+					</div>
+					<div class="col-sm-4">
+						<label>Designation</label>
+					</div>
+					<div class="col-sm-2">
+						<label>Exprience(Y.M)</label>
+					</div>
+				</div>
+</div> -->
+	<div id="removediv">
+				<div class="col-sm-12" id="explable"><h1>Exprience Details</h1></div>
+				<div class="col-sm-12"><button id="btnadd">Add Experience</button>
+										<button id="addmore1">Add-More</button>
+										<button id="addmore2">Add-More</button>
+										<button id="removeexp">Remove-Exp</button></div>
+
+
+		        <div class="col-sm-12">			
+               <table class="table table-striped" id="show">
+			   <div class="col-sm-12" id="cmp">
+						    <thead>
+						      <tr>
+						        <div class="col-sm-1"><th>S.No.</th></div>
+						        <div class="col-sm-4"><th>Name of Company</th></div>
+						        <div class="col-sm-4"><th>Designation</th></div>
+						        <div class="col-sm-3"><th>Exprience(Y.M)</th></div>
+						      </tr>
+						    </thead>
+						    
+						    <tbody>
+						      <tr id="tr1">
+						        <div class="col-sm-1"><th><input type="text" name="sn1" value="1" disabled></th></div>
+						        <div class="col-sm-4"><td><input type="text" name="companyname1" id="companyname1" required></td></div>
+						        <div class="col-sm-4"><td><input type="text" name="designation1" id="designation1" required></td></div>
+						        <div class="col-sm-3"><td><input type="number" step="any" name="exprience1" id="exprience1" required></td></div>
+						      </tr>
+						  				
+						      <tr id="tr2">
+						        <div class="col-sm-1"><th><input type="text" name="sn1" value="2" disabled></th></div>
+						        <div class="col-sm-4"><td><input type="text" name="companyname2" id="companyname2"></td></div>
+						        <div class="col-sm-4"><td><input type="text" name="designation2" id="designation2"></td></div>
+						        <div class="col-sm-3"><td><input type="number" step="any" name="exprience2" id="exprience2"></td></div>
+						      </tr>
+						      <tr id="tr3">
+						        <div class="col-sm-1"><th><input type="text" name="sn1" value="3" disabled></th></div>
+						        <div class="col-sm-4"><td><input type="text" name="companyname3" id="companyname3"></td></div>
+						        <div class="col-sm-4"><td><input type="text" name="designation3" id="designation3"></td></div>
+						        <div class="col-sm-3"><td><input type="number" step="any" name="exprience3" id="exprience3"></td></div>
+						      </tr>
+						    </tbody>
+						</div>    
+				</table>
+		</div>
+
+
+							<div class="form-group" id="noticediv">
+							    <label class="control-label col-sm-4" for="noticeperiod">Notice Period:</label>
+							    	 <div class="col-sm-4">
+								     <input type="number" class="form-control" name="noticeperiod[]" id="noticeperiod" placeholder="Notice Priode" required> 
+								    </div>
+
+							    	<div class="col-sm-2">
+								        <select class="form-control" name="noticeperiod[]" id="noticetime" required>
+										    <option value="days">Days</option>
+										    <option value="month">Month</option>
+										 </select>
+					    			</div>
+
+								   
+						   </div>
+</div>
+
+			<div>
+				<div class="form-group">
+				<div class="col-sm-12">
+					<h1>General Information</h1>
+				</div>
+				</div>
+
+				<div class="form-group">
+				    <label class="control-label col-sm-5" for="trainnig">Training For 1 to 10 Months:</label>
+				    <div class="col-sm-3">
+				     <select class="form-control" name="training" id="training" required>
+						    <option value="Yes">Yes</option>
+						    <option value="No">No</option>
+						  </select>
+				    </div>
+			   </div>
+			   <div class="form-group">
+				    <label class="control-label col-sm-5" for="bond">Minimum Period of Working:</label>
+				    <div class="col-sm-3">
+				     <select class="form-control" name="bond" id="bond" required>
+						    <option value="Yes">Yes</option>
+						    <option value="No">No</option>
+						  </select>
+				    </div>
+			   </div>
+			   <div class="form-group">
+				    <label class="control-label col-sm-5" for="court">Court of Law:</label>
+				    <div class="col-sm-3">
+				     <select class="form-control" name="court" id="court" required>
+						   <option value="Yes">Yes</option>
+						    <option value="No">No</option>
+						  </select>
+				    </div>
+			   </div>
+			   <div class="form-group">
+				    <label class="control-label col-sm-5" for="multishift">Multishifts:</label>
+				    <div class="col-sm-3">
+				     <select class="form-control" name="multishift" id="multishift" required>
+						    <option value="Yes">Yes</option>
+						    <option value="No">No</option>
+						  </select>
+				    </div>
+			   </div>
+			   <div class="form-group">
+				    <label class="control-label col-sm-5" for="skills">Skills:</label>
+				    <div class="col-sm-3">
+				    <textarea placeholder="Describe yourself skills with commasperated..." name="skills" id="skills"></textarea>
+				    </div>
+			   </div>
+			   <div class="form-group">
+				    <label class="control-label col-sm-5" for="currentctc">Current CTC:</label>
+				    <div class="col-sm-3">
+				     <input type="number" name="currentctc" id="currentctc" required>
+				    </div>
+			   </div>
+			   <div class="form-group">
+				    <label class="control-label col-sm-5" for="expectedctc">Expected CTC:</label>
+				    <div class="col-sm-3">
+				     <input type="number" name="expectedctc" id="expectedctc" required>
+				    </div>
+			   </div>
+			    <div class="form-group">
+				    <label class="control-label col-sm-5" for="hearaboutcompany">Hear About Company:</label>
+				    <div class="col-sm-7">
+				    <label class="checkbox-inline"><input type="checkbox" name="checkbox[]" id="checkbox" value="friends">Friend</label>
+					<label class="checkbox-inline"><input type="checkbox" name="checkbox[]" id="checkbox" value="website">Website</label>
+					<label class="checkbox-inline"><input type="checkbox" name="checkbox[]" id="checkbox" value="walkin">Walk-In</label>
+					<label class="checkbox-inline"><input type="checkbox" onclick="add()">Others</label>
+					<div class="col-sm-10"><p id="place"> </p></div>
+				    </div>
+			   </div>
+
+ <script>
+function add()
+{
+    document.getElementById("place").innerHTML="<input type='text' name='checkbox[]' id='checkbox' value=''>"
+}
+</script>
+
+
+			</div>
+
+			<div class="col-sm-12">  <button name="formsubmit" id="formsubmit" class="btn btn-default">Submit</button></div>
+         </div>
+		
+	<div id="msg"></div>
+</body>
+</html>

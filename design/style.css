@@ -1,0 +1,71 @@
+.login_d1
+{
+
+	margin: auto;
+	width: 50%;
+	margin-top: 10%;
+	
+	
+}
+.login_d1 label{
+	text-align: justify;
+}
+.login_d1 h1{
+	text-align: center;
+	color: blue;
+}
+.header{
+	width: 100%;
+	height: 10%;
+	background-color: gray;
+	position: relative;
+	margin-top: 2px;
+	
+}
+.header button{
+	width: 50%;
+	height: 50px;
+	background-color: blue;
+	color: white;
+
+
+}
+.body{
+	
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	position: relative;
+}
+.hd{
+	margin-top: 30px;
+}
+h1{
+text-align: center;
+	color: blue;
+}
+.gn
+{
+
+	margin: auto;
+	width: 50%;
+	margin-top: 10%;
+	
+	
+}
+.gn label{
+	text-align: justify;
+}
+.gn h1{
+	text-align: center;
+	color: blue;
+}
+div #bodycontent{
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	margin-top: 5%;
+	margin-left: 10px;
+
+
+}
